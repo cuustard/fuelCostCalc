@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trip Fuel Cost Calculator</title>
+		<link rel="stylesheet" href="fuelCostCalc.css" />
+	</head>
+	<body>
+		<div class="content">
+			<h1 id="title">Fuel Cost Calculator</h1>
+			<form>
+				<div class="inputContainer">
+					<label for="numRiders">Paying occupants:</label>
+					<input id="numRiders" type="number" placeholder="e.g. 4" />
+				</div>
+				<div class="inputContainer">
+					<label for="distance"><a href="https://www.google.com/maps" title="Total up your journey distance">Distance:</a></label>
+					<input type="number" id="distance" placeholder="e.g. 283.46 or 283 " />
+					<select class="unit" id="distanceUnit">
+						<option value="mi">mi</option>
+						<option value="km">km</option>
+					</select>
+				</div>
+				<div class="inputContainer">
+					<label for="carType">Car type:</label>
+					<select id="carType">
+						<option value="ice">ICE</option>
+						<option value="electric">Electric</option>
+					</select>
+				</div>
+				<div class="inputContainer">
+					<label for="fuelEfficiency"><a href="https://www.honestjohn.co.uk/real-mpg/" title="Find out your car's average miles per gallon">Fuel Efficiency:</a></label>
+					<input type="number" id="fuelEfficiency" placeholder="e.g. 48.9 or 49" />
+					<p class="unit" id="efficiencyUnit">mpg</p>
+				</div>
+				<div class="inputContainer">
+					<label for="fuelPrice"><a href="https://www.confused.com/petrol-prices" title="Check the latest fuel prices">Fuel Price:</a></label>
+					<input type="number" placeholder="E.g. 144.9 or 150" id="fuelPrice" />
+					<p class="unit" id="costUnit">pence/litre</p>
+				</div>
+			</form>
+			<hr />
+			<p id="result">Total cost:</p>
+			<p id="result2">Per passenger cost:</p>
+		</div>
+		<script src="fuelCostCalc.js"></script>
+	</body>
+</html>
